@@ -1,0 +1,30 @@
+/**
+ * The main.css styles
+ */
+
+ // Abstracts
+ @import './1-abstracts/variables.scss';
+
+ // Basics
+ @import './2-base/basics.scss';
+
+ // Components
+ @import './3-components/navigation.scss';
+ @import './3-components/footer.scss';
+ @import './3-components/slider.css';
+
+ // Layout
+ @import './4-layout/grid.css';
+
+ // Pages
+ @import './5-pages/home.scss';
+ @import './5-pages/about.scss';
+ @import './5-pages/opleiding.scss';
+ @import './5-pages/werkplekleren.scss';
+ @import './5-pages/cases.scss';
+ @import './5-pages/posts.scss';
+ @import './5-pages/contact.scss';
+
+ // Themes
+ @import './6-themes/fonts/font.css';
+

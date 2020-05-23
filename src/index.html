@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="nl-be" dir="ltr" prefix="og:http://ogp.me/ns#">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>PGM GENT</title>
+        <meta name="description" content="Eindwerk PGM met navigo">
+        <meta name="copyright" content="Copyright 2010 - Artevelde University College Ghent. All Rights Reserved.">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Web Programming  3 | Eindwerk Cédric De Blanck">
+        <meta property="og:description" content="We educate future talents Web- and App Development">
+        <meta property="og:url" content="http://www.pgm.gent/">
+        <meta property="og:site_name" content="Web Programming 3">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.0.45/css/materialdesignicons.min.css">
+    </head>
+    <body>
+        <div id="app">
+            <div class="navigation">
+                <img class="nav-image" src="./assets/front-image.svg" alt="">
+                <a class="nav-itemlogo" href="/" data-navigo><img class="nav-logo" src="./assets/logo.png" alt="PGM Logo"></a>
+                <a class="nav-item" href="/overons" data-navigo>Over ons</a>
+                <a class="nav-item" href="/opleiding" data-navigo>Opleiding</a>
+                <a class="nav-item" href="/cases" data-navigo>Cases</a>
+                <a class="nav-item" href="/posts" data-navigo>Posts</a>
+                <a class="nav-item" href="/werkplekleren" data-navigo>Werkplekleren</a>
+                <a class="nav-item" href="/contact" data-navigo>Contact</a>
+            </div>
+            <div id="content"></div>
+            <div id="posts"></div>
+        </div>
+    <footer>
+        <img class="footer-image" src="../../assets/front-image.svg" alt="">
+        <div class="footer__content">
+        <p>Contact</p>
+<div class="g-fb-container">
+    <div class="g-fb-row">
+        <div class="g-fb-col-4">
+            <div class="mapbox">
+                <div class="map_detail">
+                    <div class="mapboxmap" id='map'></div>
+                    <div id="marker"></div>
+                </div>
+            </div>
+        </div>
+        <div class="g-fb-col-4">
+            <div class="footer__lists">
+            <ul class="footer__contact">
+                <div class="footer__contact__column">
+                    <li class="footer__title">Contact</li>
+                    <li>☎ 09 234 86 00</li>
+                </div>
+                <li class="footer__title">Adres</li>
+                <li>Campus Mariakerke
+                    Industrieweg 232,
+                    9030 Gent-Mariakerke
+                </li>
+            </ul>
+        </div>
+    </div>
+<div class="g-fb-col-4">
+    <div class="footer__lists">
+        <ul class="footer_navigation">
+            <li class="footer__title">Navigatie</li>
+            <li>Over ons</li>
+            <li>Opleiding</li>
+            <li>Werkplekleren</li>
+        </ul>
+        <ul class="footer_navigation">
+            <li>Posts</li>
+            <li>Cases</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+</footer>
+</body>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+<script src="https://kit.fontawesome.com/8a1b33090c.js" crossorigin="anonymous"></script>
+<script src="./scripts/mapbox.js"></script>
+<script src="./scripts/ajax.js"></script>
+<script src="./scripts/posts.js"></script>
+<script src="./scripts/slider.js"></script>
+<script src="./scripts/students.js"></script>
+</html>
