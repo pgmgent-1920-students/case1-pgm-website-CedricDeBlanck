@@ -1,5 +1,5 @@
 {
-  "name": "case1-pgm-website-pgm-lenndery",
+  "name": "case1-pgm-website-pgm-cedricdeblanck",
   "version": "1.0.0",
   "description": "case1-pgm-website-pgm-CedricDeBlanck created by GitHub Classroom",
   "main": "index.js",
@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/pgmgent-1920-students/case1-pgm-website-CedricDeBlanck.git/issues"
   },
-  "homepage": "https://github.com/pgmgent-1920-students/case1-pgm-website-CedricDeBlanck.git#readme",
+  "homepage": "https://github.com/pgmgent-1920-students/case1-pgm-website-CedricDeBlanck.git",
   "dependencies": {
     "@11ty/eleventy": "^0.10.0",
     "body-parser": "^1.19.0",
