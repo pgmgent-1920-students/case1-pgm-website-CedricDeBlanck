@@ -42,22 +42,31 @@
   }
   
   .slider_square_button {
-    height: 15px;
     z-index: 99999;
-    margin-left: calc(var(--spacer)*16);
-    margin-top: calc(var(--gutter)*13);
-    width: 100px;
+    margin-left: calc(var(--gutter)*24.5);
+    margin-top: -320px;
+    width: 20px;
+    height: 100px;
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    justify-content: space-between;
   }
   
   .slider_square_button button {
-    width: 13px;
-    height: 13px;
-    display: inline-block;
+    width: 12px;
+    height: 12px;
+    display: flex;
+    flex-direction: column;
     border: 1px solid white;
+    border-radius: 50px;
     z-index: 99999;
     background: transparent;
-    margin-right: 7px;
     cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 4px;
   }
   
   .dot.active {
@@ -87,7 +96,6 @@
   .header-button1,.header-button2 {
     width: 40px;
     height: 60px;
-    vertical-align: middle;
     background: #152d3a;
     color: white;
     cursor: pointer;
@@ -103,8 +111,6 @@
     height: 60px;
     z-index: 99999;
     width: 100px;
-    top: 50vh;
-    margin-top: -30px;
     margin-left: 850px;
   }
   
