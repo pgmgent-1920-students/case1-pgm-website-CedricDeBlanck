@@ -1,1 +1,0 @@
-export let postshtml = document.getElementById('posts');
