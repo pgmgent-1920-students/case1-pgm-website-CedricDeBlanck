@@ -6,10 +6,12 @@
         font-family: var(--futur-font);
         font-size: var(--font-size-title);
         color: var(--color--whitish);
-        padding-top: 30vh;
-        width: 50%;
         margin: 0 auto;
         letter-spacing: 2px;
+        text-align: center;
+    }
+    .title__head:first-of-type {
+        padding-top: 25vh;
     }
     .footer__title {
         color: var(--color--whitish);

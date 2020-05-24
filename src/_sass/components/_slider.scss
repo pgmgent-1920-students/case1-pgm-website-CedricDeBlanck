@@ -1,0 +1,122 @@
+.slider-image1 {
+    background-image: url(../../static/images/banner2.jpg);
+    width: 700px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    transition-duration: 1;
+    border-radius: 0px 20px 20px 0px;
+  }
+  
+  .slider-image2 {
+    background-image: url(../../static/images/banner3.jpg);
+    width: 700px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0px 20px 20px 0px;
+  }
+  
+  .slider-image3 {
+    background-image: url(../../static/images/banner.jpg);
+    width: 700px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0px 20px 20px 0px;
+  }
+  
+  .slider-image1, .slider-image2, .slider-image3 {
+    top: 0px;
+    z-index: -1;
+  }
+  
+  .slider {
+    margin-top: 200px;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .header-slider {
+    height: 300px;
+  }
+  
+  .slider_square_button {
+    height: 15px;
+    z-index: 99999;
+    margin-left: calc(var(--spacer)*16);
+    margin-top: calc(var(--gutter)*13);
+    width: 100px;
+  }
+  
+  .slider_square_button button {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    border: 1px solid white;
+    z-index: 99999;
+    background: transparent;
+    margin-right: 7px;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: white;
+  }
+  
+  .header-text-top {
+    color: white;
+    margin-top: -180px;
+  }
+
+  .header-text-top h2 {
+    margin-left: 50px;
+    z-index: 999999;
+  }
+  
+  .header-text-top>h1 {
+    font-size: var(--font-size-h2);
+  }
+  
+  .header-text-top a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+  }
+
+  .header-button1,.header-button2 {
+    width: 40px;
+    height: 60px;
+    vertical-align: middle;
+    background: #152d3a;
+    color: white;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .header-button1 i, .header-button2 i {
+    top: 23px;
+    right: 15px;
+  }
+  
+  .header-button {
+    height: 60px;
+    z-index: 99999;
+    width: 100px;
+    top: 50vh;
+    margin-top: -30px;
+    margin-left: 850px;
+  }
+  
+  .header-content {
+    width: 100%;
+  }
+  
+  .header-button1:hover,.header-button2:hover {
+    opacity: 1;
+  }
+
+  .slidercontent {
+    width: 500px;
+  }
+  

@@ -6,4 +6,11 @@ main {
 
 body {
     overflow-x: hidden;
+    a {
+        color: var(--color--whitish);
+    }
+    a:hover {
+        color: var(--color--pinkish);
+        text-decoration: none;
+    }
 }
