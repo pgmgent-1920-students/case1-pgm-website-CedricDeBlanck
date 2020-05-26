@@ -21,13 +21,17 @@ function postsInDom(posts) {
   posts.forEach(post => {
     
         postshtml.innerHTML += `
-        <div class="m-post">
-              <picture>
-              <img class="a-post__image" src="${post.image}">
-              </picture>
-              <p class="a-post__title">${post.title}</p>
-              <p class="a-post__text">${post.text}</p>
-              </div>
+            <div class="m-post">
+              <a href="${post.i}" class="m-post__hover">
+                <p class="a-post__moreinfo">Meer info</p>
+                <picture>
+                  <img class="a-post__image" src="${post.image}">
+                </picture>
+              </a>
+              <div class="a-post__textcontainer">
+                  <p class="a-post__title">${post.title}</p>
+                </div>
+            </div>
         `;
     
   });
