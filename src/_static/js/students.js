@@ -1,35 +1,36 @@
 let studentshtml = document.getElementById('students');
-let studentsurl = 'https://raw.githubusercontent.com/pgmgent-1920-students/case1-pgm-website-baas-CedricDeBlanck/master/data/students.json?token=ANGVHBS5HM6LK6PFSNKDKX262POYG';
 
-function studentsData() {
-    fetch(studentsurl)
-        .then((response) => {
-            return response.json();
-        })
-        .then((data) => {
-          console.log(data)
-          studentsInDom(data);
-        })
-        .catch((error) => {
-            console.log(error);
-        })
+const fetchAPI = async (url) => {
+  try {
+    let response = await fetch(url)
+    let data = await response.json();
+    return data
+  } catch {
+    throw new Error('Tis kapot...')
+  }
+}
+
+async function dataToDom() {
+  const apidata = await fetchAPI('https://raw.githubusercontent.com/pgmgent-1920-students/case1-pgm-website-baas-CedricDeBlanck/master/data/students.json?token=ANGVHBS5HM6LK6PFSNKDKX262POYG')
+  apidata.records.forEach(i => {
+    const div = document.createElement('div');
+    div.classList.add('a-student__content');
+    div.innerHTML = `
+    <div class="a-student__info">
+    <picture>
+    <img class="o-student__image" src="${i.fields.img[0].thumbnails.large.url}">
+    </picture>
+      <div class="o-student__name">
+      <p>${i.fields.name_first}</p>
+      <p>${i.fields.name_last}</p>
+      </div>
+      </div>
+
+  `;
+  console.log(i.fields.img[0].thumbnails.small.url)
+    // body vervangen door een variabele die naar u container verwijst
+    document.getElementById('students').appendChild(div);
+  });
 };
 
-studentsData()
-
-function studentsInDom(student) {
-  for (let i = 1; i < 3; i++) {
-        studentshtml.innerHTML += `
-        class="container">
-        <div class="row align-self-start">
-          <picture id="o-cases-picture__img">
-            <img src='../../assets/picture.png' />
-        </picture>
-        <div id="o-cases__lesson">
-         <a href="/cases"><h1>${student[student.length - i].records[i].fields.name_first}</h1></a>
-         </div>
-
-        `;
-      };
-
-};
+dataToDom();

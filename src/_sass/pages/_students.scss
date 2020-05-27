@@ -1,0 +1,34 @@
+#students {
+    position: relative;
+    margin: 0 auto;
+    width: fit-content;
+    .a-student__content {
+        width: 300px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 50px 50px 50px 0px;
+        picture {
+            position: absolute;
+        }
+
+        .o-student__image {
+            position: absolute;
+            border-radius: 500px;
+            border: 2px solid var(--color--pinkish);
+            width: 150px;
+            height: 150px;
+        }
+
+        .o-student__name {
+            color: var(--color--whitish);
+            background-color: var(--color--darkblue);
+            width: 300px;
+            font-family: 'futuristic armour';
+            font-size: 25px;
+            padding: 30px;
+            border-radius: 15px;
+        }
+    }
+}
