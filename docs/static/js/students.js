@@ -1,5 +1,3 @@
-let studentshtml = document.getElementById('students');
-
 const fetchAPI = async (url) => {
   try {
     let response = await fetch(url)

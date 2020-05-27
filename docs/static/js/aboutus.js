@@ -1,4 +1,4 @@
-filterSelection("section1")
+filterSelection("section0")
 function filterSelection(c) {
   let x, i;
   x = document.getElementsByClassName("filterDiv");
