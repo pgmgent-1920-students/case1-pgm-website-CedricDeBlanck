@@ -8,10 +8,10 @@
 //     },
 //     cacheElements() {
 //       this.detailData = [];
-//       this.detailListElement = document.querySelector('.detailpage');
+//       this.detailListElement = document.querySelector('.detailpage-team');
 //     },
 //     async loadDetail() {
-//     Ajax.fetchJsonByHandlers(`https://raw.githubusercontent.com/pgmgent-1920-students/case1-pgm-website-baas-CedricDeBlanck/master/docs/data/students/index.json?token=ANGVHBRF6XN26FEZIQYBOES63JQJA`,
+//     Ajax.fetchJsonByHandlers(`https://raw.githubusercontent.com/pgmgent-1920-students/case1-pgm-website-baas-CedricDeBlanck/master/docs/data/students/index.json?token=ANGVHBXZQW7S6DNNRBVEI6S63JQXA`,
 //     (data) => {
 //       this.detailData = data;
 //       this.generateUIForProjectsDetail();
@@ -58,20 +58,21 @@ const fetchAPI1 = async (url) => {
   }
 }
 
-async function dataToDom() {
-  const apidata = await fetchAPI1('https://raw.githubusercontent.com/pgmgent-1920-students/case1-pgm-website-baas-CedricDeBlanck/master/docs/data/students/index.json?token=ANGVHBRF6XN26FEZIQYBOES63JQJA')
 
-  apidata.records.forEach((i, index) => {
+async function dataToDom() {
+  const apidata = await fetchAPI1('https://raw.githubusercontent.com/pgmgent-1920-students/case1-pgm-website-baas-CedricDeBlanck/master/docs/data/students/index.json?token=ANGVHBXZQW7S6DNNRBVEI6S63JQXA')
+
+  apidata.forEach((i, index) => {
     const div = document.createElement('div');
     div.classList.add('a-student__content');
     div.innerHTML = `
     <div class="a-student__info g-fb-col-3">
       <picture>
-        <img class="o-student__image" src="${i.fields.img[0].thumbnails.large.url}">
+        <img class="o-student__image" src="${i.thumbnailUrl}">
       </picture>
         <div class="o-student__name">
-          <p>${i.fields.name_first}</p>
-          <p>${i.fields.name_last}</p>
+          <p>${i.name}</p>
+          <p>${i.function}</p>
           <a class="nav-item" href="/case1-pgm-website-CedricDeBlanck/students/students?student-id=${index}">Meer info</a>
       </div>
     </div>
