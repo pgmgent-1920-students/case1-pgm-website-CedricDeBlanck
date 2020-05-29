@@ -1,5 +1,5 @@
 let postshtml = document.getElementById('posts');
-let DOMAIN = 'https://pgmgent-1920-students.github.io/case1-pgm-website-baas-CedricDeBlank/data/posts/index.json';
+let DOMAIN = 'https://raw.githubusercontent.com/pgmgent-1920-students/case1-pgm-website-baas-CedricDeBlanck/master/docs/data/posts/index.json?token=ANGVHBQS2334IPHBWOQE3YS63KI3Y';
 
 function postsData() {
     fetch(DOMAIN)
