@@ -1,8 +1,8 @@
 let postshtml = document.getElementById('posts');
-const DOMAIN = 'https://pgmgent-1920-students.github.io/case1-pgm-website-baas-CedricDeBlank';
+let DOMAIN = 'https://pgmgent-1920-students.github.io/case1-pgm-website-baas-CedricDeBlank';
 
 function postsData() {
-    fetch(`https://pgmgent-1920-students.github.io/case1-pgm-website-baas-CedricDeBlank/data/posts/index.json`)
+    fetch(`${DOMAIN}/data/posts/index.json`)
         .then((response) => {
             return response.json();
         })
