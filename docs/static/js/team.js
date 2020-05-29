@@ -21,11 +21,9 @@ async function dataToDom() {
         <div class="o-student__name">
           <p>${i.name}</p>
           <p>${i.function}</p>
-      </div>
+        </div>
     </div>
-
   `;
-    // body vervangen door een variabele die naar u container verwijst
     document.getElementById('team').appendChild(div);
   });
 };
