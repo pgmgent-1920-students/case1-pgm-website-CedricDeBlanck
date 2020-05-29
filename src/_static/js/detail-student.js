@@ -11,7 +11,7 @@
       this.detailListElement = document.querySelector('.detailpage');
     },
     async loadDetail() {
-    Ajax.fetchJsonByHandlers(`https://raw.githubusercontent.com/pgmgent-1920-students/case1-pgm-website-baas-CedricDeBlanck/master/data/students.json?token=ANGVHBS5HM6LK6PFSNKDKX262POYG`,
+    Ajax.fetchJsonByHandlers(`https://raw.githubusercontent.com/pgmgent-1920-students/case1-pgm-website-baas-CedricDeBlanck/master/docs/data/students/index.json?token=ANGVHBXZQW7S6DNNRBVEI6S63JQXA`,
     (data) => {
       this.detailData = data;
       this.generateUIForProjectsDetail();
