@@ -60,7 +60,7 @@ const fetchAPI1 = async (url) => {
 
 
 async function dataToDom() {
-  const apidata = await fetchAPI1('https://raw.githubusercontent.com/pgmgent-1920-students/case1-pgm-website-baas-CedricDeBlanck/master/docs/data/students/index.json?token=ANGVHBXZQW7S6DNNRBVEI6S63JQXA')
+  const apidata = await fetchAPI1('https://raw.githubusercontent.com/pgmgent-1920-students/case1-pgm-website-baas-CedricDeBlanck/master/docs/data/team/index.json?token=ANGVHBVPWLY5EWVBTYUQEQC63KWC2')
 
   apidata.forEach((i, index) => {
     const div = document.createElement('div');

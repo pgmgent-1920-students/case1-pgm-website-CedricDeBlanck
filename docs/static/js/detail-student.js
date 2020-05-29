@@ -60,9 +60,10 @@ const fetchAPI1 = async (url) => {
 
 async function dataToDom() {
   const apidata = await fetchAPI1('https://raw.githubusercontent.com/pgmgent-1920-students/case1-pgm-website-baas-CedricDeBlanck/master/docs/data/students/index.json?token=ANGVHBRF6XN26FEZIQYBOES63JQJA')
-
+  const searchLink = window.location.search;
+  const projectId = searchLink.substring(searchLink.indexOf('=') + 1);
   apidata.records.forEach((i, index) => {
-    const div = document.createElement('div');
+    const div = document.createElement('a');
     div.classList.add('a-student__content');
     div.innerHTML = `
     <div class="a-student__info g-fb-col-3">
@@ -72,7 +73,7 @@ async function dataToDom() {
         <div class="o-student__name">
           <p>${i.fields.name_first}</p>
           <p>${i.fields.name_last}</p>
-          <a class="nav-item" href="/case1-pgm-website-CedricDeBlanck/students/students?student-id=${index}">Meer info</a>
+          <a class="nav-item" href="/case1-pgm-website-CedricDeBlanck/students/students?student-id=${projectId}">Meer info</a>
       </div>
     </div>
 

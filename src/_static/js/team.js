@@ -9,7 +9,7 @@ const fetchAPI1 = async (url) => {
 }
 
 async function dataToDom() {
-  const apidata = await fetchAPI1('https://raw.githubusercontent.com/pgmgent-1920-students/case1-pgm-website-baas-CedricDeBlanck/master/docs/data/cases/index.json?token=ANGVHBWDCA76OB5LE7ALDOK63KGIA')
+  const apidata = await fetchAPI1('https://raw.githubusercontent.com/pgmgent-1920-students/case1-pgm-website-baas-CedricDeBlanck/master/docs/data/team/index.json?token=ANGVHBVPWLY5EWVBTYUQEQC63KWC2')
   apidata.forEach((i, index) => {
     const div = document.createElement('div');
     div.classList.add('a-student__content');
@@ -21,7 +21,6 @@ async function dataToDom() {
         <div class="o-student__name">
           <p>${i.name}</p>
           <p>${i.function}</p>
-          <a class="nav-item" href="/case1-pgm-website-CedricDeBlanck/students/students?student-id=${index}">Meer info</a>
       </div>
     </div>
 
