@@ -22,7 +22,7 @@ function postsInDom(posts) {
     
         postshtml.innerHTML += `
             <div class="m-post">
-              <a href="${post.i}" class="m-post__hover">
+              <a href="/case1-pgm-website-CedricDeBlanck/posts/posts?post-id=${post.id}" class="m-post__hover">
                 <p class="a-post__moreinfo">Meer info</p>
                 <picture>
                   <img class="a-post__image" src="${post.image}">

@@ -56,8 +56,26 @@
     left: 0px;
 }
 
-.m-cases__section {
-    height: 300px;
+.m-technology__section {
+    margin-top: calc(var(--gutter)*9);
+    background-color: var(--color--darkblue);
+    color: var(--color--pinkish);
+    font-family: var(--futur-font);
+    height: 100px;
+    margin-bottom: calc(var(--gutter)*4);
+    marquee {
+        padding: 30px;
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 4px;
+        marquee-content {
+            width: 300%;
+            display: flex;
+            line-height: 30px;
+            animation: marquee 10s linear infinite forwards;
+            animation-duration: 70;
+        }
+    }
 }
 
 .m-info__section {

@@ -14,14 +14,14 @@ async function dataToDom() {
     const div = document.createElement('div');
     div.classList.add('a-student__content');
     div.innerHTML = `
-    <div class="a-student__info g-fb-col-3">
+    <div class="a-student__info g-fb-col-3" data-id="${i.id}">
       <picture>
         <img class="o-student__image" src="${i.fields.img[0].thumbnails.large.url}">
       </picture>
         <div class="o-student__name">
           <p>${i.fields.name_first}</p>
           <p>${i.fields.name_last}</p>
-          <a class="nav-item" href="/case1-pgm-website-CedricDeBlanck/students/students?student-id=${index}">Meer info</a>
+          <a class="nav-item" href="/case1-pgm-website-CedricDeBlanck/students/students?student-id=${i.id}">Meer info</a>
       </div>
     </div>
 
