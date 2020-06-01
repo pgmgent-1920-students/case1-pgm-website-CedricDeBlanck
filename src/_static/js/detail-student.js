@@ -22,7 +22,6 @@ async function dataToDom() {
     //console.log(student)
     apidata.records.forEach((i) => {
 
-   
     detailElement.innerHTML = `
       <div class="detail__maintext__news">
           <h2>${i.fields.name_first}</h2>
@@ -32,7 +31,8 @@ async function dataToDom() {
           </picture>
       </div>
             `;
-    document.getElementById('detailpage').appendChild(detailElement);
+    document.getElementById('detailpage-students').appendChild(detailElement);
+  
   });
   //}
 };

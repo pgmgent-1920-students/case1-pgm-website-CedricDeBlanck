@@ -20,6 +20,7 @@ body {
     position: relative;
     justify-content: space-evenly;
     padding-top: 20px;
+    z-index: 1;
     .nav-image {
         position: absolute;
         width: 100vw;
@@ -57,3 +58,45 @@ body {
     width: 120px;
     margin-left: 30px;
 }
+
+.mobile-nav {
+    display: none;
+    z-index: 99999;
+}
+
+@media only screen and (max-width: 500px) {
+    .mobile-nav {
+        display: block;
+        .nav_logo {
+            margin-left: -13px;
+        }
+    }
+    .desktop-nav {
+        display: none;
+    }
+    .mobile-nav.nav-show {
+        display: flex;
+        padding-top: 15px;
+        z-index: 9999999;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: var(--color-darkblue);
+        line-height: 2;
+        flex-direction: column;
+        border: none;
+        margin: 0 auto;
+        text-align: center;
+        .nav_logo {
+            margin-left: -13px;
+        }
+      }
+}
+
+@media (max-width: 1200px) {
+    .mobile-nav {
+      display: none;
+    }
+    
+  }

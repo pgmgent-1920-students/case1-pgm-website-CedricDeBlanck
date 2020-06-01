@@ -47,3 +47,11 @@
         text-align: center;
     }
 }
+
+.team__title {
+    margin: 20px;
+    font-size: 40PX;
+    width: fit-content;
+    margin-left: calc(var(--gutter)*4);
+    font-family: var(--futur-font);
+}
