@@ -18,6 +18,9 @@ function postsData() {
 postsData()
 
 function postsInDom(posts) {
+  const searchLink = window.location.search;
+  const projectId = searchLink.substring(searchLink.indexOf('=') + 1);
+  console.log(projectId);
   posts.forEach(post => {
     
         postshtml.innerHTML += `

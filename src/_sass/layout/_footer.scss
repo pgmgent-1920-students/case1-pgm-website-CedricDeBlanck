@@ -2,6 +2,10 @@ footer {
     font-size: var(--font-size-normal);
     color: var(--color--whitish);
     height: 400px;
+    .footer__items {
+        display: flex;
+        flex-direction: row;
+    }
     .footer-image {
         position: absolute;
         height: 400px;
@@ -44,5 +48,26 @@ footer {
     .footer__contact {
         list-style: none;
         width: 200px;
+    }
+}
+
+@media only screen and(max-width: 500px) {
+    .footer__items {
+        flex-direction: column!important;
+    }
+
+    .footer-image {
+        position: absolute;
+        height: 905px!important;
+        width: 126%;
+        z-index: -1;
+        background-color: var(--color--darkblue);
+    }
+
+    .footer_navigation__field {
+        display: none;
+    }
+    .footer__contact {
+        width: 500px!important;
     }
 }

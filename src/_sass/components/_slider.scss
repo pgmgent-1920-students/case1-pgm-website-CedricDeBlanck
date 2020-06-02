@@ -125,4 +125,20 @@
   .slidercontent {
     width: 500px;
   }
+
+  @media only screen and(max-width: 500px) {
+    .cases__square {
+        position: absolute;
+        left: 0px;
+    }
+    .slider {
+        width: 100vw;
+        .slidercontent {
+            width: 100vw;
+            .slider-image1,.slider-image2,.slider-image3 {
+                width: 100vw;
+            }
+        }
+    }
+  }
   
