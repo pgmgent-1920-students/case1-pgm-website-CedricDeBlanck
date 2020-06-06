@@ -41,7 +41,7 @@
         }
         .team__function {
             font-family: 'Open Sans';
-            line-height: 25px;
+            line-height: var(--gutter);
         }
     }
 }
