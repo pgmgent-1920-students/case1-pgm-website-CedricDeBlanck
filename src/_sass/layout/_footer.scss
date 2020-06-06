@@ -94,3 +94,9 @@ footer {
         margin-left: var(--spacer)!important;
     }
 }
+
+@media only screen and(max-width: 1500px) {
+    .footer__title {
+        margin-left: calc(var(--gutter)*3);
+    }
+}
