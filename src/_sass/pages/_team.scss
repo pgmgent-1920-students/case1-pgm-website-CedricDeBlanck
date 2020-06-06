@@ -4,13 +4,16 @@
     width: fit-content;
     margin-top: calc(var(--gutter)*3);
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    
     .a-student__content {
         width: 300px;
         text-align: center;
         align-items: center;
         display: flex;
         flex-direction: column;
-        margin: 50px 50px 50px 0px;
+        margin-bottom: calc(var(--gutter)*3);
         picture {
             position: absolute;
         }
@@ -35,9 +38,21 @@
             line-height: 10px;
             border-radius: 15px;
             width: 280px;
-            height: 180px;
+        }
+        .team__function {
+            font-family: 'Open Sans';
+            line-height: 25px;
         }
     }
+}
+
+.docent__info, .students__info {
+    margin-top: 100px;
+    margin: 20px 20px 20px 0px;
+}
+
+.team__page {
+    display: flex;
 }
 
 #team {
@@ -48,6 +63,14 @@
     }
 }
 
+#buttonsForFiltering {
+    background-color: var(--color--darkblue);
+    padding-top: 25px;
+    margin: 20px;
+    width: 200px;
+    height: 150px;
+}
+
 .team__title {
     margin: 20px;
     font-size: 40PX;
@@ -56,8 +79,20 @@
     font-family: var(--futur-font);
 }
 
-@media only screen and(max-width: 400px) {
-    .a-student__content {
-        margin-left: -200px;
+@media only screen and(max-width: 500px) {
+    .team__title {
+        margin-left: -20px;
+    }
+    #students, #team {
+        margin-left: -110px;
+        .a-student__content {
+            margin-bottom: calc(var(--gutter)*3);
+        }
+    }
+
+    #team {
+        .o-student__name {
+            width: auto;
+        }
     }
 }

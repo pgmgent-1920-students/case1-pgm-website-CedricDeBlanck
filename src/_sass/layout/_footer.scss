@@ -37,6 +37,18 @@ footer {
         line-height: 40px;
         list-style: none;
     }
+    .footer_navigation_last {
+        margin-left: 100px;
+        line-height: 40px;
+        list-style: none;
+        margin-top: var(--gutter);
+        width: 80px;
+    }
+    .footer-nav-item {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+    }
     .mapboxmap {
         width: 450px;
         height: 280px;
@@ -58,7 +70,7 @@ footer {
 
     .footer-image {
         position: absolute;
-        height: 905px!important;
+        height: 700px!important;
         width: 126%;
         z-index: -1;
         background-color: var(--color--darkblue);
@@ -69,5 +81,16 @@ footer {
     }
     .footer__contact {
         width: 500px!important;
+        margin-left: -15px;
+        li {
+            width: 230px;
+        }
+    }
+    #map {
+        margin-left: -14px;
+        width: 90vw;
+    }
+    p {
+        margin-left: var(--spacer)!important;
     }
 }

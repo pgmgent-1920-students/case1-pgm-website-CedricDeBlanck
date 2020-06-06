@@ -18,4 +18,10 @@ body {
         font-family: var(--futur-font);
         font-size: 22Px;
     }
+    i {
+        transition-duration: 0.3s;
+    }
+    .fa-long-arrow-alt-right {
+        margin-left: 5px;
+    }
 }

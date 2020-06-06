@@ -49,6 +49,13 @@
     width: 90%;
     display: none;
     margin: 20px;
+}
+
+.opleidings__page {
+    color: black;
+    width: 90%;
+    display: none;
+    margin: 20px;
     border: 1px solid gray;
     padding: 50px 100px 50px 100px;
     box-shadow: 10px 10px 52px -14px rgba(0,0,0,0.75);
@@ -81,4 +88,10 @@
 embed {
     height: 500px;
     width: 500px;
+}
+
+@media only screen and(max-width:500px) {
+    .o-opleiding__page {
+        flex-direction: column;
+    }
 }

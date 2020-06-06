@@ -150,5 +150,22 @@
         top: 30px;
         left: 30px;
     }
+
+    .cases__square {
+        left: 0px;
+        margin-top: -50px;
+        margin-left: var(--spacer);
+    }
+
+    .m-info__section {
+        flex-direction: column;
+        .a-info__first, .a-info__second {
+            width: 90vw;
+            margin: 20px;
+            .a-info__readmore {
+                width: 90vw;
+            }
+        }
+    }
 }
 

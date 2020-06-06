@@ -59,18 +59,18 @@
     height: 12px;
     display: flex;
     flex-direction: column;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 50px;
     z-index: 99999;
     background: transparent;
     cursor: pointer;
     margin-top: 15px;
     margin-bottom: 15px;
-    margin-left: 4px;
+    margin-left: 3px;
   }
   
   .dot.active {
-    background-color: white;
+    background-color: var(--color--darkblue);
   }
   
   .header-text-top {
@@ -83,7 +83,7 @@
     z-index: 999999;
   }
   
-  .header-text-top>h1 {
+  .header-text-top > h1 {
     font-size: var(--font-size-h2);
   }
   
@@ -94,10 +94,8 @@
   }
 
   .header-button1,.header-button2 {
-    width: 40px;
-    height: 60px;
-    background: #152d3a;
-    color: white;
+
+    color: black;
     cursor: pointer;
     border: none;
   }
@@ -115,7 +113,7 @@
   }
   
   .header-content {
-    width: 100%;
+      transform: transform();
   }
   
   .header-button1:hover,.header-button2:hover {

@@ -20,7 +20,7 @@ async function dataToDom() {
       </picture>
         <div class="o-student__name">
           <p>${i.name}</p>
-          <p>${i.function}</p>
+          <p class="team__function">${i.function}</p>
         </div>
     </div>
   `;
