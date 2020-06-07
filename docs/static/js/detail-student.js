@@ -14,25 +14,27 @@ async function dataToDom() {
   const searchLink = window.location.search;
   const studentId = searchLink.substring(searchLink.indexOf('=') + 1);
   console.log(studentId);
-  let detail = apidata[studentId];
+  console.log(apidata)
+  let detail = apidata.records.find(student => student.id === studentId);
+  console.log(detail);
     let detailElement = null;
     detailElement = document.createElement('div');
     detailElement.classList.add('detail');
-    apidata.records.forEach((i) => {
+    //apidata.records.forEach((detail) => {
 
     detailElement.innerHTML = `
       <div class="detail__maintext__news">
-          <h2>${i.fields.name_first}</h2>
-          <p>${i.fields.name_last}</p>
-          <p>${i.id}</p>
+          <h2>${detail.fields.name_first}</h2>
+          <p>${detail.fields.name_last}</p>
+          <p>${detail.id}</p>
           <picture>
-          <img src="${i.fields.img[0].thumbnails.large.url}">
+          <img src="${detail.fields.img[0].thumbnails.large.url}">
           </picture>
       </div>
             `;
     document.getElementById('detailpage-students').appendChild(detailElement);
   
-  });
+  //});
   
 };
 

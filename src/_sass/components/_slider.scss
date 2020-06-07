@@ -36,6 +36,10 @@
     width: 100%;
     z-index: -1;
   }
+
+  .rotate {
+    transform: rotate(90deg);
+}
   
   .header-slider {
     height: 300px;
@@ -44,14 +48,23 @@
   .slider_square_button {
     z-index: 99999;
     margin-left: calc(var(--gutter)*24.5);
-    margin-top: -320px;
+    margin-top: -275px;
     width: 20px;
     height: 100px;
     border: 1px solid gray;
     text-align: center;
     border-radius: 10px;
-    position: relative;
     justify-content: space-between;
+    position: relative;
+    .header-button1 {
+        position: absolute;
+        border: none;
+     }
+    .header-button__top {
+        position: absolute;
+        border: none;
+        margin-top: -40px;
+    }
   }
   
   .slider_square_button button {
@@ -94,26 +107,20 @@
   }
 
   .header-button1,.header-button2 {
-
     color: black;
     cursor: pointer;
     border: none;
   }
-  
+
   .header-button1 i, .header-button2 i {
     top: 23px;
     right: 15px;
   }
   
-  .header-button {
+  .header-button__bottom {
     height: 60px;
     z-index: 99999;
-    width: 100px;
-    margin-left: 850px;
-  }
-  
-  .header-content {
-      transform: transform();
+    border: none;
   }
   
   .header-button1:hover,.header-button2:hover {

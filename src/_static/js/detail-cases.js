@@ -1,5 +1,5 @@
-let postshtml = document.getElementById('detailpage-posts');
-let DOMAIN = 'https://raw.githubusercontent.com/pgmgent-1920-students/case1-pgm-website-baas-CedricDeBlanck/master/docs/data/posts/index.json?token=ANGVHBQS2334IPHBWOQE3YS63KI3Y';
+let postshtml = document.getElementById('detailpage-cases');
+let DOMAIN = 'https://raw.githubusercontent.com/pgmgent-1920-students/case1-pgm-website-baas-CedricDeBlanck/master/docs/data/cases/index.json?token=ANGVHBRNGJOX5F4EAIDWOBS63KLQ6';
 
 function postsData() {
     fetch(DOMAIN)
@@ -20,8 +20,9 @@ postsData()
 function postsInDom(data) {
     
   const searchLink = window.location.search;
-  const postId = searchLink.substring(searchLink.indexOf('=') + 1);
-  let detail = data.find(detail => detail.id === postId);
+  const caseId = searchLink.substring(searchLink.indexOf('=') + 1);
+  let detail = data.find(detail => detail.id === caseId);
+  console.log(detail)
 
         postshtml.innerHTML += `
             <div class="m-post">
