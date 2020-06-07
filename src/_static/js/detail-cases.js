@@ -25,16 +25,14 @@ function postsInDom(data) {
   console.log(detail)
 
         postshtml.innerHTML += `
-            <div class="m-post">
-              <a href="/case1-pgm-website-CedricDeBlanck/posts/posts?post-id=${detail.id}" class="m-post__hover">
-                <p class="a-post__moreinfo">Meer info</p>
+            <div class="m-case">
+              <div class="a-case__textcontainer">
+                  <p class="a-case__title">${detail.title}</p>
+              </div>
                 <picture>
-                  <img class="a-post__image" src="${detail.image}">
+                  <img class="a-case__image" src="${detail.image}">
                 </picture>
               </a>
-              <div class="a-post__textcontainer">
-                  <p class="a-post__title">${detail.title}</p>
-                </div>
             </div>
         `;
     

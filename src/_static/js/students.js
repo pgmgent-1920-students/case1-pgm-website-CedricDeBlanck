@@ -21,7 +21,7 @@ async function dataToDom() {
         <div class="o-student__name">
           <p>${i.fields.name_first}</p>
           <p>${i.fields.name_last}</p>
-          <a class="nav-item" href="/case1-pgm-website-CedricDeBlanck/students/students?student-id=${i.id}">Meer info</a>
+          <a class="more-info" href="/case1-pgm-website-CedricDeBlanck/students/students?student-id=${i.id}">Meer info<i class="fas fa-long-arrow-alt-right"></i></a>
       </div>
     </div>
 

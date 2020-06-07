@@ -67,10 +67,12 @@
     font-family: var(--futur-font);
     height: 100px;
     margin-bottom: calc(var(--gutter)*4);
+    position: relative;
+    padding: 21px;
     span {
-        font-size: 25px;
-        padding: 30px;
-        font-family: 'Open Sans', sans-serif;
+        font-size: 40px;
+        margin: 65px;
+        margin-top: 50px;
     }
 
 }
@@ -131,7 +133,6 @@
             color: var(--color--pinkish);
         }
     }
-    
 }
 
 @media only screen and(max-width: 500px) {

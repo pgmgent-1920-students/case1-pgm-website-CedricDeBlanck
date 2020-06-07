@@ -1,0 +1,60 @@
+.detail {
+    margin-bottom: var(--gutter);
+    position: relative;
+}
+
+.detail__team {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    .detail__info {
+        margin-bottom: calc(var(--gutter)*2);
+        .detail__title__info {
+            text-align: left;
+            color: var(--color--whitish);
+            font-family: 'futuristic armour';
+        }
+        .detail__interests {
+            color: black;
+        }
+        .detail__about {
+            width: 400px;
+            color: var(--color--whitish);
+            text-align: left;
+            font-size: 14px;
+        }
+    }
+    .detail__image img {
+        width: 400px;
+        height: 400px;
+        margin: var(--gutter);
+        margin-top: 0px;
+        box-shadow: 10px 10px 84px -30px rgba(0,0,0,0.75);
+    }
+}
+
+.detail__name__student {
+    text-align: left;
+    margin-top: calc(var(--gutter)*2);
+    margin-bottom: calc(var(--gutter)*2);
+    color: var(--color--whitish);
+    h2 {
+        font-size: 50px;
+        margin-left: calc(var(--gutter)*8.8);
+    }
+}
+
+.detail__studentinfo {
+    text-align: left;
+    margin-left: calc(var(--gutter)*4.3);
+}
+
+.m-case {
+    .a-case__image {
+        width: 500px;
+        height: auto;
+    }
+    .a-case__title {
+        font-size: 25px;
+    }
+}

@@ -25,10 +25,8 @@ function postsInDom(data) {
 
         postshtml.innerHTML += `
             <div class="m-post">
-              <a href="/case1-pgm-website-CedricDeBlanck/posts/posts?post-id=${detail.id}" class="m-post__hover">
-                <p class="a-post__moreinfo">Meer info</p>
                 <picture>
-                  <img class="a-post__image" src="${detail.image}">
+                  <img class="a-post__image" src="${detail.img}">
                 </picture>
               </a>
               <div class="a-post__textcontainer">
