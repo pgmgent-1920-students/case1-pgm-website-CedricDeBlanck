@@ -130,8 +130,26 @@
 
 
 @media only screen and(max-width: 500px) {
-    body {
-        overflow-x: hidden;
+    .detail__name__student {
+        h2 {
+            margin: 100px 0px 50px 0px;
+
+        }
+        width: 100%;
+        margin: 0px;
+    }
+
+    .detail__studentinfo {
+        margin: 30px 0px 0px 0px;
+    }
+    .detail__team {
+        flex-direction: column;
+        
+        .detail__image img {
+            margin: 0px;
+            width: 100%;
+        }
+
     }
     .m-case {
         width: 400px;
@@ -166,6 +184,6 @@
             }
         }
     }
- 
+    
     
 }
