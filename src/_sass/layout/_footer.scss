@@ -9,7 +9,7 @@ footer {
     .footer-image {
         position: absolute;
         height: 400px;
-        width: 126%;
+        width: 100%;
         z-index: -1;
         background-color: var(--color--darkblue);
     }
@@ -71,7 +71,7 @@ footer {
     .footer-image {
         position: absolute;
         height: 700px!important;
-        width: 126%;
+        width: 100%;
         z-index: -1;
         background-color: var(--color--darkblue);
     }
@@ -101,4 +101,5 @@ footer {
             margin-left: calc(var(--gutter)*3);
         }
     }
+   
 }

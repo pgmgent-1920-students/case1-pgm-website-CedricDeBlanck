@@ -19,15 +19,13 @@ async function dataToDom() {
               <a href="/case1-pgm-website-CedricDeBlanck/cases/cases?case-id=${i.id}" class="m-case__hover">
                 <p class="a-case__moreinfo">Meer info</p>
                 <picture>
-                  <img class="a-case__image" src="${i.image}">
+                  <img class="a-case__image" src="${i.images[0].src}">
                 </picture>
               </a>
               <div class="a-case__textcontainer">
                   <p class="a-case__title">${i.title}</p>
-                  <p class="a-case__title">${i.text}</p>
                 </div>
             </div>
-
   `;
     // body vervangen door een variabele die naar u container verwijst
     document.getElementById('cases').appendChild(div);

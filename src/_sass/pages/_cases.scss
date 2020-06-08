@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     padding: 30px;
     justify-content: center;
+    width: 100%;
     .m-case {
         width: 350px;
         height: 320px;
@@ -19,6 +20,7 @@
         }
         .a-case__textcontainer {
             z-index: 999;
+            width: 300px;
             .a-case__title {
                 padding: 10px;
                 z-index: 999;
@@ -28,7 +30,7 @@
     .a-case__moreinfo {
         position: absolute;
         display: none;
-        width: 100%;
+        width: 100px;
         height: 250px;
         transition-duration: 0.3s;
         opacity: 1;
@@ -53,6 +55,12 @@
             opacity: 1;
             background-color: var(--color--pinkish);
         }
+    }
+    .a-case__title {
+        width: 300px;
+    }
+    div {
+        width: 414px;
     }
 }
 

@@ -7,7 +7,6 @@ function postsData() {
             return response.json();
         })
         .then((data) => {
-          console.log(data)
             postsInDom(data);
         })
         .catch((error) => {
@@ -22,17 +21,25 @@ function postsInDom(data) {
   const searchLink = window.location.search;
   const caseId = searchLink.substring(searchLink.indexOf('=') + 1);
   let detail = data.find(detail => detail.id === caseId);
-  console.log(detail)
 
         postshtml.innerHTML += `
             <div class="m-case">
               <div class="a-case__textcontainer">
                   <p class="a-case__title">${detail.title}</p>
               </div>
+              <div class="image__text">
                 <picture>
-                  <img class="a-case__image" src="${detail.image}">
+                  <img class="a-case__image" src="${detail.images[0].src}">
+                  <img class="a-case__image" src="${detail.images[1].src}">
                 </picture>
-              </a>
+                  <div class="a-case__description">
+                    <p>${detail.description}</p>
+                  </div>                  
+                </div>
+                <div class="a-case__info">
+                  <p>Tags: ${detail.tags}</p>
+                  <p>Creator: ${detail.makers}</p>
+                </div>
             </div>
         `;
     

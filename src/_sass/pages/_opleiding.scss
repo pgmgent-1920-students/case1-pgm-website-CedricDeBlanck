@@ -90,8 +90,41 @@ embed {
     width: 500px;
 }
 
+.yt-video {
+    width: 750px; 
+    height: 543px;
+}
+
 @media only screen and(max-width:500px) {
+    .container {
+        width: 414px;
+        margin: 0;
+        position: relative;
+    }
     .o-opleiding__page {
         flex-direction: column;
+        width: 400px;
+    }
+    #player {
+        height: 80%;
+        width: 100px;
+    }
+    #buttonsForFiltering {
+        margin: 0px;
+        margin-bottom: 0px;
+    }
+    .yt-video {
+        width: 360px; 
+        height: 250px;
+        margin-left: -50px;
+    }
+    .filterDiv {
+        overflow: hidden;
+        margin-left: -15px;
+        width: 414px;
+        #player {
+            width: 100px;
+            margin-left: -100px;
+        }
     }
 }

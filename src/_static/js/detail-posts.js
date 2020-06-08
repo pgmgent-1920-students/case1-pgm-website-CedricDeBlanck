@@ -7,7 +7,6 @@ function postsData() {
             return response.json();
         })
         .then((data) => {
-          console.log(data)
             postsInDom(data);
         })
         .catch((error) => {
@@ -24,15 +23,25 @@ function postsInDom(data) {
   let detail = data.find(detail => detail.id === postId);
 
         postshtml.innerHTML += `
+        <div class="g-fb-container">
             <div class="m-post">
-                <picture>
-                  <img class="a-post__image" src="${detail.img}">
-                </picture>
-              </a>
-              <div class="a-post__textcontainer">
-                  <p class="a-post__title">${detail.title}</p>
+                <div class="a-post__info">
+                  <picture>
+                    <img class="a-post__image" src="${detail.img}">
+                  </picture>
+                  <div class="a-post__textcontainer__inner">
+                  <p class="a-post__title__inner">${detail.title}</p>
+                  <div class="post__info__inner">
+                    <p>${detail.intro}</p>
+                  </div>
+                  </div>
+                  
+                </div>
+                <div class="post__content">
+                ${detail.content}
                 </div>
             </div>
+        </div>
         `;
     
 };
