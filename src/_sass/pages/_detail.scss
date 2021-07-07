@@ -1,0 +1,190 @@
+.detail {
+    margin-bottom: var(--gutter);
+    position: relative;
+}
+
+.detail__team {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    .detail__info {
+        margin-bottom: calc(var(--gutter)*2);
+        .detail__title__info {
+            text-align: left;
+            color: var(--color--whitish);
+            font-family: 'futuristic armour';
+        }
+        .detail__interests {
+            color: black;
+        }
+        .detail__about {
+            width: 400px;
+            color: var(--color--whitish);
+            text-align: left;
+            font-size: 14px;
+        }
+    }
+    .detail__image img {
+        width: 400px;
+        height: 400px;
+        margin: var(--gutter);
+        margin-top: 0px;
+        box-shadow: 10px 10px 84px -30px rgba(0,0,0,0.75);
+    }
+}
+
+.detail__name__student {
+    text-align: left;
+    margin-top: calc(var(--gutter)*2);
+    margin-bottom: calc(var(--gutter)*2);
+    color: var(--color--whitish);
+    h2 {
+        font-size: 50px;
+        margin-left: calc(var(--gutter)*8.8);
+    }
+}
+
+.detail__studentinfo {
+    text-align: left;
+    margin-left: calc(var(--gutter)*4.3);
+    margin-top: calc(var(--gutter)*3);
+}
+
+.m-case {
+    .a-case__image {
+        width: 500px;
+        height: auto;
+    }
+    .a-case__title {
+        font-size: 25px;
+    }
+}
+
+.m-post {
+    color: var(--color--whitish);
+    margin-top: calc(var(--gutter)*4);
+    margin-bottom: calc(var(--gutter)*2);
+    .post__info__inner {
+        width: 300px;
+    }
+    .a-post__textcontainer__inner {
+        .a-post__title__inner {
+            font-size: 32px;
+            margin-top: var(--gutter);
+        }
+    }
+    .a-post__info {
+        display: flex;
+    }
+    .post__content {
+        margin-top: calc(var(--gutter)*5.8);
+        
+        p {
+            color: var(--color--black);
+            width: 60%;
+            font-size: 14px;
+        }
+        .title-text {
+            font-size: 20px;
+            font-style: italic;
+        }
+    }
+
+    .a-post__image {
+        width: 90%;
+    }
+}
+
+.title__section__cases {
+    height: 120vh;
+}
+
+.m-case {
+    text-align: left;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: calc(var(--gutter)*3);
+    .a-case__title {
+        color: var(--color--whitish);
+    }
+    .image__text {
+        display: flex;
+        width: 800px;
+        text-align: left;
+        color: var(--color--whitish);
+        margin: 0 auto;
+        position: absolute;
+        left: 0px;
+        p {
+            margin-left: var(--spacer);
+        }
+    }
+    .a-case__description {
+        margin-left: var(--spacer);
+        font-size: 18px;
+    }
+    .a-case__info {
+        margin-top: calc(var(--gutter)*22);
+    }
+}
+
+
+@media only screen and(max-width: 500px) {
+    .detail__name__student {
+        h2 {
+            margin: 100px 0px 50px 0px;
+
+        }
+        width: 100%;
+        margin: 0px;
+    }
+
+    .detail__studentinfo {
+        margin: 30px 0px 0px 0px;
+    }
+    .detail__team {
+        flex-direction: column;
+        
+        .detail__image img {
+            margin: 0px;
+            width: 100%;
+        }
+
+    }
+    .m-case {
+        width: 400px;
+        .image__text {
+            flex-direction: column;
+            width: 400px;
+            margin: 0;
+            picture {
+                width: 400px;
+                .a-case__image {
+                    width: 400px;
+                }
+            }
+        }
+        .a-case__description {
+            color: var(--color--black);
+            margin-left: -12px;
+            font-size: 12px;
+        }
+        .a-case__info {
+            margin-top: calc(var(--gutter)*22);
+        }
+    }
+    .a-post__info {
+        flex-direction: column;
+    }
+    .m-post {
+        .post__content {
+            width: 95%;
+            p {
+                width: 360px;
+            }
+        }
+    }
+    
+    
+}

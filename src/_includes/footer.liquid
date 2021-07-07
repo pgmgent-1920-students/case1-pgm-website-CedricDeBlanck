@@ -1,0 +1,46 @@
+<footer>
+    <img class="footer-image" src="{{ '/static/images/front-image.svg' | url }}" alt="">
+    <div class="footer__content">
+        <p>Contact</p>
+        <div class="g-fb-container">
+            <div class="g-fb-row footer__items">
+                <div class="g-fb-col-4">
+                    <div class="mapbox">
+                        <div class="map_detail">
+                            <div class="mapboxmap" id='map'></div>
+                            <div id="marker"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="g-fb-col-4">
+                    <div class="footer__lists">
+                        <ul class="footer__contact">
+                            <div class="footer__contact__column">
+                                <li class="footer__title">Contact</li>
+                                <li>☎ 09 234 86 00</li>
+                            </div>
+                            <li class="footer__title">Adres</li>
+                            <li>Campus Mariakerke
+                                Industrieweg 232,
+                                9030 Gent-Mariakerke
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="g-fb-col-4 footer_navigation__field">
+                    <div class="footer__lists">
+                        <ul class="footer_navigation">
+                            <li class="footer__title">Navigatie</li>
+                            <a class="footer-nav-item " href="{{ '/opleiding/' | url }}">Opleiding</a>
+                            <a class="footer-nav-item " href="{{ '/werkplekleren/' | url }}">Werkplekleren</a>
+                            <a class="footer-nav-item" href="{{ '/team/' | url }}">Team</a>
+                            <a class="footer-nav-item" href="{{ '/cases/' | url }}">Cases</a>
+                            <a class="footer-nav-item" href="{{ '/posts/' | url }}">Posts</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>

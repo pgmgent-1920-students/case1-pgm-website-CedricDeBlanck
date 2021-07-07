@@ -1,0 +1,133 @@
+---
+title: home
+layout: page
+permalink: index.html
+---
+<div class="title__section">
+    <img class="main-image" src="{{ '/static/images/front-image.svg' | url }}" alt="">
+    <h1 class="title__head">Graduaat</h1>
+    <h1 class="title__head">programmeren</h1>
+    <p class="title__subtitle">Artevelde hogeschool</p>
+</div>
+
+<div class="posts__section">
+    <div class="cases__square">
+        <h2>Posts</h2>
+        <a class="more-info" href="{{ '/posts/' | url }}" data-navigo>Meer info<i
+                class="fas fa-long-arrow-alt-right"></i></a>
+    </div>
+    <div class="slider">
+        <div class="slidercontent">
+            <div class="slider-image3"></div>
+            <div class="header-text-top">
+                <h2>5 redenen waarom jij moet kiezen voor Grafische en Digitale Media</h2>
+            </div>
+        </div>
+        <div class="slidercontent">
+            <div class="slider-image1"></div>
+
+            <div class="header-text-top">
+                <h2>Ground2Sky (student-ondernemer) workshop rond drones</h2>
+            </div>
+        </div>
+
+        <div class="slidercontent">
+            <div class="slider-image2"></div>
+            <div class="header-text-top">
+                <h2>Erasmus+ Photo Project: een internationale samenwerking met liefde voor fotografie</h2>
+                <div class="red_line"></div>
+            </div>
+        </div>
+
+        <div class="header-content-blue">
+            <div class="header-blue">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="slider_square_button">
+        <div class="header-button__top">
+            <button class="header-button1" onclick="plusSlides(-1)">
+                <i class="fas fa-chevron-left rotate"></i>
+            </button>
+        </div>
+        <button class="dot" onclick="currentSlide(1)"></button>
+        <button class="dot" onclick="currentSlide(2)"></button>
+        <button class="dot" onclick="currentSlide(3)"></button>
+        <div class="header-button__bottom">
+            <button class="header-button1" onclick="plusSlides(1)">
+                <i class="fas fa-chevron-right rotate"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="m-technology__section">
+
+    <span class="technology__item">
+        <i class="fab fa-js-square"></i>
+    </span>
+
+    <span class="technology__item">
+        <i class="fab fa-html5"></i>
+    </span>
+
+    <span class="technology__item">
+        <i class="fab fa-css3-alt"></i>
+    </span>
+
+    <span class="technology__item">
+        <i class="fab fa-sass"></i>
+    </span>
+
+    <span class="technology__item">
+        <i class="fab fa-github-square"></i>
+    </span>
+
+    <span class="technology__item">
+        <i class="fab fa-npm"></i>
+    </span>
+
+    <span class="technology__item">
+        <i class="fab fa-adobe"></i>
+    </span>
+
+    <span class="technology__item">
+        <i class="fab fa-python"></i>
+    </span>
+
+    <span class="technology__item">
+
+    </span>
+
+</div>
+
+<div class="m-info__section">
+    <div class="a-info__first">
+        <div class="a-info__title">
+            <h3>Waarom arteveldehogeschool?</h3>
+        </div>
+        <div class="a-info__text">
+            <p>Keuze uit ruim opleidingsaanbod, uitstekende begeleiding op maat en studeren in de grootste studentenstad
+                van Vlaanderen.</p>
+            <div class="a-info__readmore">
+                <a href="https://pgm.gent/info">Meer info<i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="a-info__second">
+        <div class="a-info__title">
+            <h3>Ontdek je opleidingsprogramma</h3>
+        </div>
+        <div class="a-info__text">
+            <p>Hier vind je het volledige studieprogramma voor het Graduaat Programmeren - Front-end web development,
+                met meer info over elk vak van deze opleiding.</p>
+            <div class="a-info__readmore">
+                <a href="https://pgm.gent/info">Meer info<i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{ '/static/js/slider.js' | url }}"></script>

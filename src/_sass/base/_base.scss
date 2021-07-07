@@ -1,0 +1,28 @@
+body {
+    overflow-x: hidden;
+    background: var(--color--whitish);
+    a {
+        color: var(--color--whitish);
+        transition-duration: 0.3s;
+        transform: translateX(-5px);
+    }
+    a:hover {
+        color: var(--color--pinkish);
+        text-decoration: none;
+        transition-duration: 0.3s;
+    }
+    a:hover i {
+        transform: translateX(5px);
+        transition-duration: 0.3s;
+    }
+    h3 {
+        font-family: var(--futur-font);
+        font-size: 22Px;
+    }
+    i {
+        transition-duration: 0.3s;
+    }
+    .fa-long-arrow-alt-right {
+        margin-left: 5px;
+    }
+}

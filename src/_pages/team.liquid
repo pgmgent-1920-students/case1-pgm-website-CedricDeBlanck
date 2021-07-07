@@ -1,0 +1,40 @@
+---
+title: team
+layout: page
+permalink: team/index.html
+---
+
+<div class="title__section">
+    <img class="main-image" src="{{ '/static/images/front-image.svg' | url }}" alt="">
+    <h1 class="title__head">Team</h1>
+</div>
+
+<div class="team__page">
+<div id="buttonsForFiltering">
+    <button class="btn active" onclick="filterSelection('section0')">Studenten</button>
+    <button class="btn " onclick="filterSelection('section1')">Docenten</button>
+</div>
+<div class="container">
+    <div class="filterDiv section0 students__info">
+        <div class="team__title">
+            <h2>Studenten</h2>
+        </div>
+        <div class="g-fb-row" id="students">
+
+        </div>
+    </div>
+    <div class="filterDiv section1 docent__info">
+        <div class="team__title">
+            <h2>Artevelde team</h2>
+        </div>
+        <div class="g-fb-row" id="team">
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+<script src="{{ '/static/js/students.js' | url }}"></script>
+<script src="{{ '/static/js/team.js' | url }}"></script>
+<script src="{{ '/static/js/filter.js' | url }}"> </script>

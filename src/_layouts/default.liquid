@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Graduaat Programmeren</title>
+
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta name="theme-color" content="#662B32">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#662B32">
+    -->
+    
+    <!-- seo -->
+    <!-- <meta name="robots" content="noindex, nofollow, nosnippet"> -->
+    <meta name="description" content="11ty boilerplate">
+    <meta name="keywords" content="11ty, eleventy, boilerplate">
+    <meta name="robots" content="noindex, nofollow, nosnippet">
+    
+    <!-- open graph -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="pgm.gent"/>
+    <meta property="og:title" content="pgm.gent | Graduaat Programmeren Arteveldehogeschool"/>
+    <!-- <meta property="og:image" content=""/> -->
+    
+    <!-- integrations -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    
+    <!-- webfonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet"> 
+    
+    
+    <!-- local assets -->
+    <link rel="stylesheet" href="{{ '/static/css/main.css' | url }}">
+</head>
+<body data-page="{{ title }}">
+    <div id="app">
+        {% include header width:'300' %}
+        <main>
+            {{ content }}
+        </main>
+        {% include footer width:'300' %}
+    </div>
+    
+    <!-- scripts -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+    <script src="https://kit.fontawesome.com/8a1b33090c.js" crossorigin="anonymous"></script>
+    <script type="module" src="{{ '/static/js/app.js' | url }}"></script>
+    <script type="module" src="{{ '/static/js/mobile_nav.js' | url }}"></script>
+    <script src="{{ '/static/js/mapbox.js' | url }}"></script>
+</body>
+</html>
+

@@ -1,0 +1,130 @@
+.container {
+    overflow: hidden;
+    
+}
+
+.o-opleiding__page {
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    min-width: 100vh;
+    #buttonsForFiltering {
+        background-color: var(--color--darkblue);
+        padding-top: 25px;
+        margin: 20px;
+        width: 400px;
+        height: 480px;
+        margin-top: calc(var(--gutter)*4);
+        margin-bottom: calc(var(--gutter)*4);
+    }
+
+    p {
+        font-size: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    a {
+        color: var(--color--darkblue);
+        text-decoration: underline;
+        font-size: 18px;
+    }
+
+    h4 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    span {
+        text-decoration: underline;
+    }
+
+    span:hover {
+        color: var(--color--pinkish);
+    }
+}
+
+
+.filterDiv {
+    color: black;
+    width: 90%;
+    display: none;
+    margin: 20px;
+}
+
+.opleidings__page {
+    color: black;
+    width: 90%;
+    display: none;
+    margin: 20px;
+    border: 1px solid gray;
+    padding: 50px 100px 50px 100px;
+    box-shadow: 10px 10px 52px -14px rgba(0,0,0,0.75);
+    margin-top: calc(var(--gutter)*4);
+    margin-bottom: calc(var(--gutter)*4);
+}
+
+.show {
+    display: block;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    color: var(--color--whitish);
+}
+
+.btn:hover {
+    color: var(--color--pinkish);
+}
+
+.btn.active {
+    color: var(--color--pinkish);
+}
+
+embed {
+    height: 500px;
+    width: 500px;
+}
+
+.yt-video {
+    width: 750px; 
+    height: 543px;
+}
+
+@media only screen and(max-width:500px) {
+    .container {
+        width: 414px;
+        margin: 0;
+        position: relative;
+    }
+    .o-opleiding__page {
+        flex-direction: column;
+        width: 400px;
+    }
+    #player {
+        height: 80%;
+        width: 100px;
+    }
+    #buttonsForFiltering {
+        margin: 0px;
+        margin-bottom: 0px;
+    }
+    .yt-video {
+        width: 360px; 
+        height: 250px;
+        margin-left: -50px;
+    }
+    .filterDiv {
+        overflow: hidden;
+        margin-left: -15px;
+        width: 414px;
+        #player {
+            width: 100px;
+            margin-left: -100px;
+        }
+    }
+}

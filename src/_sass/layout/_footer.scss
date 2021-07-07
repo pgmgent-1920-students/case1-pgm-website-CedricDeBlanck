@@ -1,0 +1,105 @@
+footer {
+    font-size: var(--font-size-normal);
+    color: var(--color--whitish);
+    height: 400px;
+    .footer__items {
+        display: flex;
+        flex-direction: row;
+    }
+    .footer-image {
+        position: absolute;
+        height: 400px;
+        width: 100%;
+        z-index: -1;
+        background-color: var(--color--darkblue);
+    }
+    .footer__content {
+        padding-top: var(--gutter);
+    }
+    .footer__lists {
+        display: flex;
+        color: var(--color--whitish);
+    }
+    .footer__title {
+        color: var(--color--whitish);
+        font-family: var(--futur-font);
+        line-height: 40px;
+    }
+    p {
+        font-family: var(--futur-font);
+        font-size: var(--font-size-subtitle);
+        margin-left: calc(var(--gutter)*1);
+        z-index: 999;
+        letter-spacing: 2px;
+    }
+    .footer_navigation {
+        margin-left: 100px;
+        line-height: 40px;
+        list-style: none;
+    }
+    .footer_navigation_last {
+        margin-left: 100px;
+        line-height: 40px;
+        list-style: none;
+        margin-top: var(--gutter);
+        width: 80px;
+    }
+    .footer-nav-item {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+    }
+    .mapboxmap {
+        width: 450px;
+        height: 280px;
+        margin-left: -120px;
+    }
+    .footer__contact__column {
+        margin-bottom: var(--gutter);
+    }
+    .footer__contact {
+        list-style: none;
+        width: 200px;
+    }
+}
+
+@media only screen and(max-width: 500px) {
+    .footer__items {
+        flex-direction: column!important;
+    }
+
+    .footer-image {
+        position: absolute;
+        height: 700px!important;
+        width: 100%;
+        z-index: -1;
+        background-color: var(--color--darkblue);
+    }
+
+    .footer_navigation__field {
+        display: none;
+    }
+    .footer__contact {
+        width: 500px!important;
+        margin-left: -15px;
+        li {
+            width: 230px;
+        }
+    }
+    #map {
+        margin-left: -14px;
+        width: 90vw;
+    }
+    p {
+        margin-left: var(--spacer)!important;
+    }
+}
+
+@media only screen and(max-width: 1300px) {
+    footer {
+        p {
+            margin-left: calc(var(--gutter)*3);
+        }
+    }
+   
+}
